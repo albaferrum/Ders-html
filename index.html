@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<head>
+<title>***Sistem Kayıt Sayfası***</title>
+<meta charset = "UTF-8">
+<meta name= "Description" content ="Login page">
+<meta name= "Keywords" content = "Sistem,giriş,panel,admin,login,hesap,account">
+<meta name= "googlebot" content = "noarchive">
+<meta name= "Revisit-After" content= "1-days">
+<meta name= "robots" content= "index,anasayfa,hakkimizda">
+<meta name= "copyright" content= "2019 DEU YBS All rights reserved.">
+</head>
+<body>
+
+<img src="deu_amblem.gif" width="200" height="220">
+<img src="ybs.jpg" width="200" height="250" rel="deu,ybs,okul" alt="icon"><br>
+<strong><p style="text-align:center;"> DEU YBS Endüstri 4.0 Inovasyon Programı Kayıt Sayfası</p></strong>
+<ul>
+	<li><a href="anasayfa.html">Anasayfa</a></li>
+	<li><a href="hakkimizda.html">Hakkımızda</a></li>
+		<ol>
+			<li><a href="yonetim.html">Yönetim</a></li>
+			<li><a href="personel.html">Personel</a></li>
+		</ol>
+	<li>Eğitim</li>
+	<li>İletişim</li>
+</ul>
+
+<form method= "POST" action= "kayit.php">
+<label for= "adi">Kullanıcı Adı:</label><br>
+<input id= "adi" type="text" name="kullaniciAdi"><br>
+<label for="sifre">Şifreniz:</label><br>
+<input id= "sifre" type="password" name="sifre"><br>
+<label for="keep">Beni Hatırla</label>
+<input id= "keep" type= "checkbox" checked name="Beni Hatırla"><br>
+<label for="control">Cinsiyetinizi seçiniz:</label>
+<input id= "control" type="radio" value= "Erkek" name="Cinsiyet">
+<label>Erkek</label>
+<input id= "control" type="radio" value= "Kadın" name="Cinsiyet">
+<label>Kadın</label>
+<br><p>Yaşadığınız Şehir:</p>
+<select value="sehir" id="sehir">
+<option value="sehir">Aydın</option>
+<option value="sehir">İzmir</option>
+<option value="sehir">İstanbul</option>
+<option value="sehir">Ankara</option>
+<option value="sehir">Bursa</option>
+<option value="sehir">Adana</option></select>
+<br><p>Doğum Tarihi:</p>
+<input type="date" name="calendar">
+<br><p>Arkaplan Renginizi Seçin:</p>
+<input type="color" name="renk"><br>
+<label><p>Mail adresiniz:</p></label>
+<input type="email" name="email"><br>
+<label><p>Okuduğunuz dönem:</p></label>
+<input type="number" min="1" max="8"><br>
+<p>Sitemizi ne kadar beğendiniz?</p><b>0</b><input type="range"><b>100</b><br>
+<p>Diğer Bilgiler:</p><br>
+<textarea collums="18" rows="5"></textarea><br>
+<input type="reset" value="temizle">
+<input type="submit" value="Giriş">
+</form>
+</body>
+
+</html>
